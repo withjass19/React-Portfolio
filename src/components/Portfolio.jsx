@@ -1,11 +1,11 @@
 import React from 'react'
 // import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
 import arrayDestruct from "../assets/portfolio/foodie.png";
-import installNode from "../assets/portfolio/installNode.jpg";
+// import installNode from "../assets/portfolio/installNode.jpg";
 import navbar from "../assets/portfolio/clock.png";
 import reactParallax from "../assets/portfolio/Weather.png";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+// import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
+// import reactWeather from "../assets/portfolio/reactWeather.jpg";
 
 export default function Portfolio() {
     const portfolios = [
@@ -32,18 +32,18 @@ export default function Portfolio() {
           btn2: "Demo",
           demoLink: 'https://withjass19.github.io/StopWatch/',
         },
-        {
-          id: 4,
-          src: reactSmooth,
-        },
-        {
-          id: 5,
-          src: installNode,
-        },
-        {
-          id: 6,
-          src: reactWeather,
-        },
+        // {
+        //   id: 4,
+        //   src: reactSmooth,
+        // },
+        // {
+        //   id: 5,
+        //   src: installNode,
+        // },
+        // {
+        //   id: 6,
+        //   src: reactWeather,
+        // },
       ];
     return (
     <div
