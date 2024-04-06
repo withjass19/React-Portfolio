@@ -1,8 +1,9 @@
 import React from 'react'
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
+// import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
+import arrayDestruct from "../assets/portfolio/foodie.png";
 import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
+import navbar from "../assets/portfolio/clock.png";
+import reactParallax from "../assets/portfolio/Weather.png";
 import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
 
@@ -11,14 +12,25 @@ export default function Portfolio() {
         {
           id: 1,
           src: arrayDestruct,
+          btn1: "Code",
+          codeLink: 'https://github.com/withjass19/Foodies.git',
+          btn2: "Demo",
+          demoLink: 'https://withjass19.github.io/Foodies/',
         },
         {
           id: 2,
           src: reactParallax,
+          btn1: "Code",
+          codeLink: "https://github.com/withjass19/Weather-App.git",
+          btn2: "Demo",
         },
         {
           id: 3,
           src: navbar,
+          btn1: "Code",
+          codeLink: "https://github.com/withjass19/StopWatch.git",
+          btn2: "Demo",
+          demoLink: 'https://withjass19.github.io/StopWatch/',
         },
         {
           id: 4,
@@ -47,7 +59,7 @@ export default function Portfolio() {
       </div>
 
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-        {portfolios.map(({ id, src }) => (
+        {portfolios.map(({ id, src, demoLink, codeLink, btn1, btn2  }) => (
           <div key={id} className=" shadow-md shadow-gray-600 rounded-lg">
             <img
               src={src}
@@ -56,10 +68,14 @@ export default function Portfolio() {
             />
             <div className="flex items-center justify-center">
               <button className=" w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                Demo
+                <a href={codeLink} target='_blank' rel="noreferrer">
+                  {btn1}
+                </a>
               </button>
               <button className="px-6 py-3 w-1/2 m-4 duration-200 hover:scale-105">
-                Code
+                <a href={demoLink} target='_blank'  rel="noreferrer">
+                  {btn2}
+                </a>
               </button>
             </div>
           </div>
